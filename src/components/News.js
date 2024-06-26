@@ -28,8 +28,7 @@ const News = (props) => {
             setLoading(false);
             setProgress(100);
         } catch (error) {
-            console.error('Error fetching news:', error);
-            setLoading(false); // Ensure loading state is turned off in case of error
+            setLoading(false);
         }
     }, [setProgress, country, category, apiKey, pageSize, page]);
 
